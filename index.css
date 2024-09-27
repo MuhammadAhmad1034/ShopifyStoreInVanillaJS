@@ -1,0 +1,138 @@
+h2{
+  margin-top: 30px;
+  text-align: center;
+}
+#categoryTable{
+  margin-top: 20px;
+}
+button{
+    margin-left: auto;
+    margin-right: auto;
+}
+p{
+  font-weight: bold;
+  text-align: center;
+}
+table {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; 
+    margin-bottom: 50px;
+    border-collapse: collapse;
+  }
+th{
+    padding: 10px;
+}  
+
+th,td {
+  border: 1px solid black;
+}
+
+
+td{
+    cursor: pointer;
+    
+}
+
+#header{
+  display: flex;
+  justify-content: end;
+  margin-right: 30px;
+  cursor:pointer;
+}
+i{
+  font-size: 50px;
+}
+#itemInfoFooter{
+  margin-bottom: 10px;
+  margin-left: 350px;
+}
+#quantity{
+  margin-left: 230px;
+  margin-top: 5px;
+}
+span{
+  margin-right: 10px;
+}
+#itemInfo{
+  text-align: center;
+  font-weight: bold;
+  color:green;
+  margin-top: 20px;
+}
+input{
+  width:40px;
+  border: none;
+}
+#subCategoryTable td,#categoryTable td{
+  padding:10px;
+}
+#itemTable td{
+  padding:30px;
+}
+button{
+  width: 100px;
+  height: 50px;
+  background-color: #f1c40f;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 230px;
+}
+#itemInfo{
+  margin-bottom: 10px;
+
+}
+#btnProceedOrder button{
+  margin-left:60px ;
+  position:absolute;
+  bottom:20px;
+}
+
+#clearAllDiv button{
+  margin-left:150px ;
+  background-color: none;
+
+}
+#browseBtn{
+  margin-right: 240px;
+}
+
+/*  */
+
+
+/* Style the list */
+ul.breadcrumb {
+  position: sticky;
+  margin-top: 70px;
+  padding: 10px 16px;
+  width: max-content;
+  list-style: none;
+  
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: #444444;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+

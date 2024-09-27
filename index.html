@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shopify</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="sidemenu.css">
+        <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css">
+    </head>
+
+
+
+    <body>
+        
+         
+        <nav id="header">
+            <div class="logo">
+                
+              <span class="logo-name">Shopify</span>
+              <i class='bx bxs-cart'></i>
+            </div>
+            <div class="sidebar">
+              <div class="logo">
+                <i class='bx bx-arrow-back'></i>
+                <span class="logo-name">Shopify Cart</span>
+                
+              </div>
+              <div id="clearAllDiv">
+                <button id="clearAllBtn" onclick="emptyCart()">Clear All</button>
+              </div>
+              <div class="sidebar-content" id="sideContent">
+                <div id="sideContentDiv">
+                    
+                </div>
+                <div id="btnProceedOrder">
+                    <button onclick="confirmOrder()" id="confirmOrderBtn">Confirm Order</button>
+                </div>
+              </div>
+              
+            </div>
+        </nav>
+        <ul class="breadcrumb" id="breadcrumb">
+            <li><a href="javascript:void(0)" onclick="displayCategories();addCategoryRowHandlers();">Categories</a></li>
+          </ul>
+          
+         <h2 id="mainHeading">Categories</h2> 
+           
+        <table id="categoryTable">
+            <tr>
+                <th>Number</th>
+                <th>Category</th>
+            </tr>
+        </table>
+        <h2 id="subHeading"></h2>
+        <table id="subCategoryTable">
+            <tr>
+                <th>Id</th>
+                <th>SubCategory</th>
+            </tr>
+        </table>
+        <h2 id="itemHeading"></h2>
+
+        <table id="itemTable">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th id="change">In Stock Quantity</th>
+                <th>Price(Rs.)</th>
+            </tr>
+        </table>
+        <div id="itemInfo"></div>
+
+        <div id="itemInfoFooter">
+            <div id="quantity">
+                <label for="quantity">Quantity:</label>
+                <input type="number" placeholder="1" value="1" id="quantityInput" min="1">
+            </div>  
+            <br>
+            <button id="addToCart" onclick="addToCart()">Add to Cart</button>
+            
+        </div>
+
+
+        <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="cOrderReceipt"></p>
+        </div>
+    
+    </div>
+
+        <script src="sidemenu.js"></script>
+        <script src="data.js"></script>
+        <script src="index.js"></script>
+         
+
+    </body>
+</html>
